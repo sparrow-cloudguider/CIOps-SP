@@ -45,7 +45,7 @@ spec:
     ) {
         node(POD_LABEL) {
         
-        String url = "git@github.com:egovernments/DIGIT-DevOps.git";
+        String url = "git@github.com:sparrow-cloudguider/UPYOG-DevOps-SP.git";
         String folderdir = './deploy-as-code/helm/release_charts';
         String envdir = './deploy-as-code/helm/environments';
         def dirs = [];
@@ -153,7 +153,7 @@ spec:
                 definition {
                   cps {
                       script(''' library 'ci-libs'
-                        infradeployer(repo:'git@github.com:egovernments/DIGIT-DevOps.git', branch: 'master', helmDir: 'deploy-as-code/helm') ''')
+                        infradeployer(repo:'git@github.com:sparrow-cloudguider/UPYOG-DevOps-SP.git', branch: 'master', helmDir: 'deploy-as-code/helm') ''')
                       sandbox() 
                     }
                 }
